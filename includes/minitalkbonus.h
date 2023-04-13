@@ -6,11 +6,11 @@
 /*   By: goda-sil <goda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 17:55:22 by goda-sil          #+#    #+#             */
-/*   Updated: 2023/04/12 22:54:52 by goda-sil         ###   ########.fr       */
+/*   Updated: 2023/04/13 18:16:27 by goda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALkBONUS_H
+#ifndef MINITALKBONUS_H
 # define MINITALKBONUS_H
 
 # include <signal.h>

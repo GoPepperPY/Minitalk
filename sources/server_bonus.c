@@ -6,7 +6,7 @@
 /*   By: goda-sil <goda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 17:53:12 by goda-sil          #+#    #+#             */
-/*   Updated: 2023/04/12 22:59:36 by goda-sil         ###   ########.fr       */
+/*   Updated: 2023/04/13 18:43:27 by goda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,12 @@ void	print_message(int signal, siginfo_t *info, void *ucontext)
 
 int	main(int argc, char **argv)
 {
-	pid_t	pid;
+	pid_t				pid;
 	struct sigaction	tool;
 
 	(void) argv;
 	tool.sa_sigaction = &print_message;
 	tool.sa_flags = SA_RESTART | SA_SIGINFO;
-
 	pid = getpid();
 	if (argc != 1)
 	{

@@ -6,7 +6,7 @@
 /*   By: goda-sil <goda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 17:53:22 by goda-sil          #+#    #+#             */
-/*   Updated: 2023/04/12 23:27:27 by goda-sil         ###   ########.fr       */
+/*   Updated: 2023/04/13 18:45:11 by goda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ void	check_delivery(int signal)
 
 int	main(int argc, char **argv)
 {
-	int		counter;
-	int		pid;
-	char	*message;
+	int					counter;
+	int					pid;
+	char				*message;
 	struct sigaction	tool;
 
 	tool.sa_handler = &check_delivery;
